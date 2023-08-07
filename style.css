@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  background-color: hsl(218, 22%, 67%);
+  padding: 140px 400px;
+}
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Karla", sans-serif;
+}
+
+.box {
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* go google Box Generator CSS to more easily configure shadow*/
+  border-radius: 7.5px;
+  overflow: hidden;
+  width: 640px;
+  height: 420px;
+}
+
+.top {
+  padding: 2em 2em 2em 2.5em;
+  width: 100%;
+  height: 45%;
+}
+.top h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+}
+
+.top h4 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+}
+
+.top p {
+  color: hsl(218, 22%, 67%);
+}
+
+.bottom {
+  /* display: flex; */
+  color: hsl(204, 43%, 93%);
+
+  width: 100%;
+  height: 55%;
+}
+
+.bottom-left {
+  display: inline-block; /*wah kao inline-block must make sure the html file's related divs must not have any whitespace in the html document in order to get them to be horizontal*/
+  vertical-align: top; /*left box will 'drop downwards' when using inline-block*/
+  background-color: hsl(179, 62%, 43%);
+  /* flex: 1; */
+  /* border-bottom-left-radius: 7.5px;*/
+  /*bottomleftradius not needed anymore due to overflow being hidden*/
+  padding: 1em 0.5em 0em 2.5em;
+  width: 50%;
+  height: 100%;
+}
+
+.bottom-right {
+  display: inline-block;
+  background-color: hsl(179 62% 43% /75%);
+
+  /* flex: 1; */
+  /*border-bottom-right-radius: 7.5px;*/
+  padding: 1em 0.5em 0em 2.5em;
+  width: 50%;
+  height: 100%;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+li {
+  
+  font-size: 0.9em;
+  margin: 1% auto;
+  opacity: 0.75;
+}
+
+#price {
+  font-size: 2em;
+  font-weight: 700;
+}
+#price, #price-freq {
+  display: inline-block;
+}
+#price-freq {
+  position: relative;
+  top: -3px;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+button {
+  margin: 5% auto;
+  box-shadow: 0 0 12px 12px hsl(204, 43%, 93%, 0.1);
+  padding: 2.5% 25%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  width: 230px;
+  height: 45px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+#why-us {
+  margin-left: 0.1em;
+
+  /*padding-top: 1em;
+  padding-left: 2em;*/
+}
+
+#full-access{
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
